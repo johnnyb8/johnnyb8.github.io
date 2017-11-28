@@ -1013,6 +1013,7 @@
 		button.special,
 		.button.special {
 			background-color: #ffffff;
+			/*opacity: 0.5;*/
 			color: #1b1f22 !important;
 			font-weight: 600;
 		}
@@ -1094,7 +1095,7 @@
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/pexels1.jpg");/*url("../../images/bg.jpg");*/
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
