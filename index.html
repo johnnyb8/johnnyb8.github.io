@@ -48,6 +48,7 @@
 						</nav>
 					</header>
 
+
 				<!-- Main -->
 					<div id="main">
 
@@ -57,9 +58,31 @@
 								<h2 class="major">About Me</h2>
 								<div class="aboutMe" id="particles-js"></div>
 								<span class="image main"><img id="headshot"src="images/headshot2.jpg" alt="" /></span>
-								<p>I'm 20 years old and I grew up in Ottawa before moving to St. John's for school. I am an active person and spend my spare time hiking, biking, playing guitar, and playing sports when I have the time.</p>
+								<p>I'm 20 years old and I grew up in Ottawa before moving to St. John's for school. I am an active person and spend my spare time hiking, biking, playing <a id="myImg1">guitar</a>, and playing <a id="myImg">sports</a> when I have the time.</p>
 								<p>Hockey and rugby are my main sports and I was on many successful teams during and after high school.  I played a leadership role as captain and learned how to work as part of a team and also motivate the other members of the team.</p>
+								<!-- Trigger the Modal
+								<p><a id="myImg">Click me</a></p>-->
 
+								<!-- The Modal -->
+								<div id="myModal" class="modal">
+
+  									<!-- The Close Button -->
+  									<span class="close">&times;</span>
+
+  								<!-- Modal Content (The Image) -->
+  							<img class="modal-content" id="img01">
+
+ 							</div>
+							<!-- The Modal -->
+							<div id="myModal1" class="modal1">
+
+									<!-- The Close Button -->
+								<span class="close1">&times;</span>
+
+								<!-- Modal Content (The Image) -->
+								<img class="modal-content1" id="img02">
+
+							</div>
 							</article>
 
 
@@ -68,7 +91,7 @@
 								<h2 class="major">Work</h2>
 								<div class="workMe" id="particles-js2"></div>
 								<span class="image main"><img id="nokiaImg" src="images/nokia1.png" alt="" /></span>
-								<p>I'm currently doing my second Co-op work term at Nokia networks in Ottawa.  It's a terrific workplace with challenging work and a great team atmosphere. My team provides 3rd level support for Nokia installations around the world using one of their successful their enterprise level software solutions entitled SAM.  I have learned a lot about the product itself, and have also had a chance to hone my troubleshooting skills.  During my time at Nokia I have provided numerous presentations to both peers and management staff about the work I was doing at the time.</p>
+								<p>I'm currently doing my second Co-op work term at Nokia networks in Ottawa.  It's a terrific workplace with challenging work and a great team atmosphere. My team provides 3rd level support for Nokia installations around the world using one of their successful enterprise level software solutions entitled NSP NFM-P. I have learned a lot about the product itself, and have also had a chance to hone my problem solving, troubleshooting, and programming skills.  During my time at Nokia I have provided numerous presentations to both peers and management staff about the work I am doing.</p>
 								<p>The Ottawa Nokia campus employs about 60 co-op students and I am one of 2 students on the internal Co-op council which Nokia developed to be a voice for the the co-op  students.</p>
 								<p><a href="images/John_Barry_Resume.pdf">Resume</a>
 							</article>
@@ -376,6 +399,42 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/particles.js"></script>
 			<script src="assets/js/app.js"></script>
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+			<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+			<script>
+			var modal = document.getElementById('myModal');
+			var modal1 = document.getElementById('myModal1');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var img = document.getElementById('myImg');
+			var modalImg = document.getElementById("img01");
+			img.onclick = function(){
+    		modal.style.display = "block";
+    		modalImg.src = "images/rugby.jpg";
+			}
+
+			var img1 = document.getElementById('myImg1');
+			var modalImg1 = document.getElementById("img02");
+			img1.onclick = function(){
+    		modal1.style.display = "block";
+    		modalImg1.src = "images/guitar.jpg";
+			}
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+  				modal.style.display = "none";
+				}
+				// Get the <span> element that closes the modal
+				var span1 = document.getElementsByClassName("close1")[0];
+
+			// When the user clicks on <span> (x), close the modal
+				span1.onclick = function() {
+  				modal1.style.display = "none";
+				}
+</script>
 
 	</body>
 </html>
