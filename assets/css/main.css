@@ -120,9 +120,13 @@ margin-top: 10px;
 .modal-content1 {
 	 margin: auto;
 	 display: block;
-	 width: 83%;
+	 width: %;
 	 height: auto;
 
+}
+
+#resume:hover {
+	
 }
 
 
