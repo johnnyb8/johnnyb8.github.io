@@ -33,10 +33,10 @@
 								<h1>Hi, I'm John Barry</h1>
 								<p>Computer Engineering Student</p>
 								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/john-barry-77809a11a/" class="icon fa-linkedin" title="Linkedin"><span class="label">Linkedin</span></a></li>
-									<li><a href="mailto:john.barry@mun.ca" class="icon fa-envelope-o" title="Contact"><span class="label">Email</span></a></li>
-									<li><a href="images/John_Barry_Resume_v2.pdf" class="icon fa-file-text-o" title="Resume"><span class="label">Resume</span></a></li>
-									<li><a href="https://github.com/johnnyb8" class="icon fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/johnbarrynl/" target="_blank" class="icon fa-linkedin" title="Linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="mailto:john.barry@mun.ca" target="_blank" class="icon fa-envelope-o" title="Contact"><span class="label">Email</span></a></li>
+									<li><a href="images/John_Barry_Resume_Fall18.pdf" target="_blank" class="icon fa-file-text-o" title="Resume"><span class="label">Resume</span></a></li>
+									<li><a href="https://github.com/johnnyb8" target="_blank" class="icon fa-github" title="GitHub"><span class="label">GitHub</span></a></li>
 								</ul>
 							</div>
 						</div>
@@ -60,7 +60,7 @@
 
 								<h2 class="major">About Me</h2>
 								<div class="aboutMe" id="particles-js"></div>
-								<span class="image main"><img id="headshot"src="images/headshot2.jpg" alt="" /></span>
+								<span class="image main"><img id="headshot"src="images/john_headshot.jpg" alt="" /></span>
 								<p>I'm 20 years old and I grew up in Ottawa before moving to St. John's for school. I am an active person and spend my spare time hiking, biking, playing <a id="myImg1"><strong>guitar</strong></a>, and playing <a id="myImg"><strong>sports</strong></a> when I have the time.</p>
 								<p>Hockey and rugby are my main sports and I was on many successful teams during and after high school.  I played a leadership role as captain and learned how to work as part of a team and also motivate the other members of the team.</p>
 
@@ -86,20 +86,20 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<div class="workMe" id="particles-js2"></div>
-								<span class="image main"><img id="colab-banner" src="images/colab.png" alt="" /></span>
+								<span class="image main"><img id="colab-banner" src="images/colab_logo.png" alt="" /></span>
 								<p>I have been working at CoLab Software for the past three months as a full stack developer with a focus on the front end. During this time, I have accomplished a lot, and developed many complex features that add true value to our product, Gradient. I have proven myself to be a highly functioning member of the team, not only as a developer, but someone with good ideas to bring to the table.</p>
 								<p>Working for a fast growing start up has been an immensely gratifying experience. </p>
-								<span class="image main"><img id="nokiaImg" src="images/nokia1.png" alt="" /></span>
+								<span class="image main"><img id="nokiaImg" src="images/nokia_logo.png" alt="" /></span>
 								<p>I completed two Co-op work terms at Nokia Networks in Ottawa.  It was a terrific workplace with challenging work and a great team atmosphere. My team provided 3rd level support for Nokia installations around the world using one of their successful enterprise level software solutions entitled NSP NFM-P. I learned a lot about the product itself, and also had a chance to hone my problem solving, troubleshooting, and programming skills.  During my time at Nokia I provided numerous presentations to both peers and management staff about the work I was doing.</p>
 								<p>The Ottawa Nokia campus employs about 60 co-op students and I was one of 3 students on the internal Co-op council which Nokia developed to be a voice for the the co-op students. I was also a member of the 3 person co-op team responsible for part of Nokia's United Way fundraiser. </p>
-								<p><a href="images/John_Barry_Resume_v2.pdf">Resume</a>
+								<p><a href="images/John_Barry_Resume_Fall18.pdf">Resume</a>
 							</article>
 
 						<!-- About -->
 							<article id="about">
 								<h2 class="major">School</h2>
 								<div class="schoolMe" id="particles-js3"></div>
-								<span class="image main"><img src="images/mem.png" alt="" id="memImg" /></span>
+								<span class="image main"><img src="images/mun_logo.png" alt="" id="memImg" /></span>
 								<p>I graduated high school with Honours and was an Ontario Scholar with a French Immersion certificate.</p>
 								<p>With an aptitude for science, math and troubleshooting it was a logical decision to pursue a career in engineering.  Recognizing that the future in most industries would be built around automation and computing I chose Computer Engineering as my discipline.</p>
 								<p>Choosing Memorial University of Newfoundland (MUN) was an easy decision.  With my sister  completing her Master of Science degree at MUN and my mother being from Newfoundland I had spent a lot of time on the island and I loved it.</p>
@@ -128,7 +128,7 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-							</article>							
+							</article>
 					</div>
 
 				<!-- Footer -->
@@ -143,48 +143,15 @@
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
+			<script src="assets/js/external/jquery.min.js"></script>
+			<script src="assets/js/external/skel.min.js"></script>
+			<script src="assets/js/external/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/particles.js"></script>
-			<script src="assets/js/app.js"></script>
+			<script src="assets/js/external/particles.js"></script>
+			<script src="assets/js/external/particles_setup.js"></script>
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 			<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-			<script>
-			var modal = document.getElementById('myModal');
-			var modal1 = document.getElementById('myModal1');
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-			var img = document.getElementById('myImg');
-			var modalImg = document.getElementById("img01");
-			img.onclick = function(){
-    		modal.style.display = "block";
-    		modalImg.src = "images/rugby.jpg";
-			}
-
-			var img1 = document.getElementById('myImg1');
-			var modalImg1 = document.getElementById("img02");
-			img1.onclick = function(){
-    		modal1.style.display = "block";
-    		modalImg1.src = "images/guitar.jpg";
-			}
-
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-
-			// When the user clicks on <span> (x), close the modal
-				span.onclick = function() {
-  				modal.style.display = "none";
-				}
-				// Get the <span> element that closes the modal
-				var span1 = document.getElementsByClassName("close1")[0];
-
-			// When the user clicks on <span> (x), close the modal
-				span1.onclick = function() {
-  				modal1.style.display = "none";
-				}
-</script>
+			<script src="assets/js/john.js"></script>
 
 	</body>
 </html>
