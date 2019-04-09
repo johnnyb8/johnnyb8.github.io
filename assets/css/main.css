@@ -784,6 +784,11 @@ margin-top: 10px;
 		position: relative;
 	}
 
+	.image-inline.image.main {
+		display: inline-block;
+		width: 45%;
+	}
+
 		.image:before {
 			-moz-pointer-events: none;
 			-webkit-pointer-events: none;

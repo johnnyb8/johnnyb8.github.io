@@ -12,6 +12,11 @@
 		display: inline-block;
 		position: relative;
 
+		&-inline {
+			display: inline-block;
+			width: 45%;
+		}
+
 		&:before {
 			@include vendor('pointer-events', 'none');
 			background-image: url('../../images/overlay.png');
